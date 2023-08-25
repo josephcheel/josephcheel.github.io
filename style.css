@@ -18,12 +18,18 @@
 	padding: auto;
 }
 
-
+/* .container {
+	background-image: linear-gradient(to bottom right, blue, pink);
+	width: 500px;
+	height: 200px;
+} */
 
 /* body {
 	background-image: linear-gradient(to bottom,#1105fc, #5950FB, #1105FA, #2B277A, #0E04C7);
   } */
 
-.body-gradient {
-	background: linear-gradient(to bottom right, blue, pink);
+.background {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top right , #211E70, #3430B0, #3F3AD6, #4641EF, #4A44FC);
 }
