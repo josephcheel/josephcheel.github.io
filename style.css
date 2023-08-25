@@ -9,6 +9,9 @@
 .first-title {
 	color : #EDCF37;
 	font-size: 3rem;
+	text-align: center;
+	margin-top: 20%;
+	margin-bottom: 30px;
 }
 
 .my-description {
@@ -16,6 +19,7 @@
 	color:#42ED8C;
 	font-size: 2rem;
 	padding: auto;
+	text-align: center;
 }
 
 /* .container {
@@ -31,5 +35,5 @@
 .background {
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to top right , #211E70, #3430B0, #3F3AD6, #4641EF, #4A44FC);
+	background-image: linear-gradient(to top right , #3F3AD6, #93C8F5);
 }
