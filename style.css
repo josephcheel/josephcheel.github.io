@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+	font-size: 62.5%;
+	
+}
+
+.first-title {
+	color : #EDCF37;
+	font-size: 3rem;
+}
+
+.my-description {
+
+	color:#42ED8C;
+	font-size: 2rem;
+	padding: auto;
+}
+
+
+
+/* body {
+	background-image: linear-gradient(to bottom,#1105fc, #5950FB, #1105FA, #2B277A, #0E04C7);
+  } */
+
+.body-gradient {
+	background: linear-gradient(to bottom right, blue, pink);
+}
