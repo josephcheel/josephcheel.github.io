@@ -90,7 +90,29 @@ body {
   width: 100%;
   text-align: center; /* Center-align text */
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Example background color */
+  background-color: rgba(255, 255, 255, 0.5); /* Example background color */
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Example shadow */
   z-index: 999; 
+}
+
+@media (max-width: 600px) {
+	.nav_links li {
+		margin-right: 40px; /* Add space between list items */
+	}
+
+	.title {
+		margin-top: 50%;
+		font-size: 5mm;
+	}
+	.description {
+		font-size: 2.5mm;
+	}
+	.wik {
+		/* position: absolute; */
+		bottom: 0;
+		left: 0;
+		width: 90%;
+
+		font-size: 3mm;
+	}
 }
