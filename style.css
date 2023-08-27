@@ -1,29 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 * {
+	/* background-color: #f0f0f0; */
+	font-family: "Inter";
+}
+
+body {
+ 
+	/* height: 100%; */
+	overflow: hidden;
+	box-sizing: border-box; 
 	margin: 0;
-	padding: 0;
-	box-sizing: 0;
-	font-size: 62.5%;
-	
 }
 
-.first-title {
-	color : #EDCF37;
-	font-size: 3rem;
-	text-align: center;
-	margin-top: 20%;
-	margin-bottom: 30px;
-}
-
-.my-description {
-
-	color:#42ED8C;
-	font-size: 2rem;
-	padding: auto;
-	text-align: center;
-}
-
-.background {
+#canvas {
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to top right , #3F3AD6, #93C8F5);
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	/* width: 100vw;
+  height: 100vh; */
+   
+}
+
+.text {
+	.content {
+	position: relative; /* Para que el contenido esté en la parte superior del canvas */
+	z-index: 1; /* Asegurarse de que el contenido esté sobre el canvas */
+	padding: 20px;
+	color: white; /* Cambiar el color del texto para que sea legible sobre el fondo */
+	 }
+}
+
+.title {
+	text-align: center;
+	margin-top: 20%;
+}
+
+.description {
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	flex-direction: column; /* Stack content vertically */
+	justify-content: center; /* Center align vertically */
+	align-items: center; /* Center align horizontally */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	padding: 5px; /* Add some padding for spacing */
+	z-index: 1; /* Adjust z-index as needed */
+	background-image: linear-gradient(135deg, rgba(255, 255,255, 0.1),rgba(255, 255,255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.logo {
+	width: 30px;
+	padding-top: 10px;
+	padding-left: 50px;
+	z-index: 2;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	margin-right: 100px; /* Add space between list items */
+	padding-top: 10px;
+	justify-content: space-evenly;
+}
+
+.nav_links li a {
+	z-index: 2;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.wik {
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; /* Center-align text */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Example background color */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Example shadow */
+  z-index: 999; /* Ensure the footer is above other content */
 }
