@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
 * {
 	font-family: "Inter";
 }
@@ -84,15 +84,18 @@ body {
 }
 
 .wik {
-	position: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center; /* Center-align text */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5); /* Example background color */
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Example shadow */
-  z-index: 999; 
+  padding: 10px;
+  margin: 0;
+  /* background-color: rgba(255, 255, 255, 0.1); Example background color */
+  /* box-shadow: 0px -2px 5px ,rgba(100, 100, 200, 0.5); */
+  z-index: 999;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 @media (max-width: 600px) {
