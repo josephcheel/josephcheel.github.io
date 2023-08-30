@@ -119,6 +119,9 @@ body {
     margin-right: 40px;
   }
 
+  .nav_links {
+	padding-left: 40px;
+  }
   .title {
     margin-top: 50%;
     font-size: 5mm;
