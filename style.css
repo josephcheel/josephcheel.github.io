@@ -108,6 +108,8 @@ body {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 }
 
 
