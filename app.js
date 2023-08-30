@@ -1,3 +1,10 @@
+let bool = true
+
+const changeValue = () => {
+    bool = !bool
+    console.log(bool)
+}
+
 let c = document.getElementById('canvas');
 let $ = c.getContext('2d');
 
@@ -26,10 +33,11 @@ let run = function() {
       col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
     }
   }
-  t = t + 0.100; // Increment t instead of multiplying
+  if (bool == true)
+    t = t + 0.040; // Increment t instead of multiplying
+  else if (bool == false)
+    t = t + 0.080;
   window.requestAnimationFrame(run);
 };
 
 run();
-
-

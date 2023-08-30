@@ -1,96 +1,97 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+
+/* Global Styles */
 * {
-	font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-
-	overflow: hidden;
-	box-sizing: border-box; 
-	margin: 0;
+  overflow: hidden;
 }
 
+/* Canvas */
 #canvas {
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	/* width: 100vw;
-  height: 100vh; */
-   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
 }
 
+/* Text Styles */
 .text {
-	.content {
-	position: relative; /* Para que el contenido esté en la parte superior del canvas */
-	z-index: 1; /* Asegurarse de que el contenido esté sobre el canvas */
-	padding: 20px;
-	color: white; /* Cambiar el color del texto para que sea legible sobre el fondo */
-	 }
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white;
 }
 
-.title {
-	text-align: center;
-	margin-top: 20%;
-	color: rgba(0, 0, 0, 0.7)
-}
-
-.description {
-	text-align: center;
-	color: rgba(0, 0, 0, 0.4)
-}
-
+/* Header */
 .header {
-	display: flex;
-	flex-direction: column; /* Stack content vertically */
-	justify-content: center; /* Center align vertically */
-	align-items: center; /* Center align horizontally */
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 40px;
-	padding: 5px; /* Add some padding for spacing */
-	z-index: 1; /* Adjust z-index as needed */
-	background-image: linear-gradient(135deg, rgba(255, 255,255, 0.1),rgba(255, 255,255, 0));
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  z-index: 1;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
-	width: 30px;
-	padding-top: 10px;
-	padding-left: 50px;
-	z-index: 2;
+  width: 30px;
+  padding-top: 10px;
+  padding-left: 50px;
+  z-index: 2;
 }
 
 .nav_links {
-	list-style: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
 }
 
 .nav_links li {
-	display: inline-block;
-	margin-right: 100px; /* Add space between list items */
-	padding-top: 10px;
-	justify-content: space-evenly;
+  margin-right: 100px;
+  padding-top: 10px;
 }
 
 .nav_links li a {
-	z-index: 2;
-	display: table-cell;
-	vertical-align: middle;
+  display: block;
 }
 
+/* Content Styles */
+.title {
+  text-align: center;
+  margin-top: 20%;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.description {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Wiki Footer */
 .wik {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center; /* Center-align text */
+  text-align: center;
   padding: 10px;
   margin: 0;
   z-index: 999;
@@ -98,24 +99,39 @@ body {
   font-size: 12px;
 }
 
-@media (max-width: 600px) {
-	.nav_links li {
-		margin-right: 40px; /* Add space between list items */
-	}
-
-	.title {
-		margin-top: 50%;
-		font-size: 5mm;
-	}
-	.description {
-		font-size: 2.5mm;
-	}
-	.wik {
-		/* position: absolute; */
-		bottom: 0;
-		left: 0;
-		width: 90%;
-
-		font-size: 3mm;
-	}
+.button {
+	display: block;
+	margin: 20px auto;
+	background-color: rgba(76, 0, 255, 0.38);
+	color: rgba(255, 255, 255, 1);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .nav_links li {
+    margin-right: 40px;
+  }
+
+  .title {
+    margin-top: 50%;
+    font-size: 5mm;
+  }
+
+  .description {
+    font-size: 2.5mm;
+  }
+
+  .wik {
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    font-size: 3mm;
+  }
+}
+
+
