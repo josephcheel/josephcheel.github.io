@@ -4,7 +4,7 @@ body {
 	/* background-color: rgb(223, 237, 255); */
 }
 
-main, section {
+main, section, .logo {
 	margin-left: 30%;
 	margin-right: 30%;
 }
@@ -50,8 +50,10 @@ p {
 	display: none;
 }
 
-@media (min-width: 768px) {
-.location {
+
+@media (min-width: 468px)
+{
+	.location {
 	font-family: "Athiti", sans-serif;
 	font-weight: 400;
 	font-size: 0.9em;
@@ -60,16 +62,10 @@ p {
 	margin-right: 30%;
 	justify-content: space-between;
 	color: darkgrey;
-	display: block;
+	display: inline-block;
 	
 }
 }
-
-/* a:link {
-	color: rgb(211, 71, 11);
-	font-style: un;
-} */
-
 /* Visited link */
 a:visited {
 	color: rgb(211, 71, 11);
@@ -103,10 +99,4 @@ a:hover {
     .contact {
         margin-top: 4em;
     }
-	/* .location {
-		/* margin-top: 5%; */
-		margin-left: 2%;
-		color: darkgrey;
-	} */
-	
 }
