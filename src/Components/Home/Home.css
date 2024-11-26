@@ -1,0 +1,61 @@
+/* .container { */
+	/* margin: 0 I !important;
+	padding: 0 !important;
+}
+.col {
+	margin: 0 I !important;
+	padding: 0 !important;
+} */
+
+
+.role {
+	display: flex;
+	justify-content: center;
+	/* align-items:normal; */
+	/* position: absolute; */
+	/* top: 50%; */
+	/* flex-direction: column; */
+
+}
+
+h1 {
+
+	color: #000;
+	font-family: Humane;
+	font-size: 500px !important;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	z-index: -10;
+	white-space: nowrap;
+
+  }
+
+  @media screen and (max-width: 768px) {
+	h1 {
+		font-size: 120px !important;
+	}
+  }
+h2 {
+	display: flex;
+	margin-right: 2% !important;
+}
+
+.text-overflow {
+	white-space: nowrap;      /* Prevents the text from wrapping */
+	overflow: hidden;         /* Hides the overflow */
+	text-overflow: ellipsis;  /* Adds an ellipsis (...) */
+  }
+  
+p {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

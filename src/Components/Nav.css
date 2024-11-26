@@ -1,0 +1,93 @@
+/* Container and row layout */
+
+.navbar-brand {
+	color: #000;
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	top: 5%;
+	left: 5%;
+	margin-left: 20px;
+}
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+	position: relative;
+  }
+  
+  .row {
+	display: flex;
+	justify-content: center;  /* Ensures the columns are centered */
+	position: relative;
+	width: 100%;
+	padding: 20px;  /* Adjust padding as needed */
+  }
+  
+  /* Each column in the row will be relatively positioned */
+  .col-2 {
+	position: relative;
+	width: 70px;  /* Adjust width for the images */
+	height: 70px; /* Adjust height as needed */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  
+  /* Image container */
+  .image-container {
+	position: absolute;
+	width: 70px;  /* Adjust width */
+	height: 70px; /* Adjust height */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  /* Ensure the images are sized correctly */
+  .image-container img {
+	width: 100%;
+	height: 100%;
+  }
+  
+  /* Center the title inside each image */
+  .image-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px; /* Adjust font size */
+	color: black;   /* Adjust text color */
+  }
+  
+  /* Make the images overlap horizontally */
+  #folder1 {
+	left: 0%;  /* Place folder 1 at the leftmost */
+	z-index: 4;  /* Bring folder 1 to the front */
+  }
+  
+  #folder2 {
+	left: 20%;  /* Move folder 2 slightly to the right to overlap with folder 1 */
+	z-index: 3;
+  }
+  
+  #folder3 {
+	left: 40%;  /* Move folder 3 slightly to the right to overlap with folder 2 */
+	z-index: 2;
+  }
+  
+  #folder4 {
+	left: 60%;  /* Move folder 4 slightly to the right to overlap with folder 3 */
+	z-index: 1;
+  }
+  
+  #languages {
+	height: 30px;
+	width: 30px;
+	margin-top: 20px
+	/* right: 100px; */
+  }
