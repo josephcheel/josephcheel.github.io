@@ -22,6 +22,13 @@
   background: radial-gradient(50% 50% at 50% 50%, #B6E1FB 0%, #FFF 100%);
  
 } 
+@font-face {
+  font-family: 'Humane';
+  src: url('/public/fonts/Humane-VF.ttf') format('truetype'); /* Corrected format */
+  font-weight: 700; /* Specifies the weight as Bold (700) */
+  font-style: normal; /* Specifies the style as normal */
+}
+
 
 h1 {
    display: flex;
