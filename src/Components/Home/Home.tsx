@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 					</h2>
 				</div>
 				<div className="row mt-5">
-					<div className="col text-center">
+					<div className="col text-center text-overflow">
 						<h3 style={styles.header}>Coming Soon...</h3>
 					</div>
 				</div>

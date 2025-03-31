@@ -34,6 +34,9 @@ h1 {
   @media screen and (max-width: 768px) {
 	h1 {
 		font-size: 120px !important;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
 	}
   }
 h2 {
@@ -42,10 +45,11 @@ h2 {
 }
 
 .text-overflow {
-	white-space: nowrap;      /* Prevents the text from wrapping */
-	overflow: hidden;         /* Hides the overflow */
-	text-overflow: ellipsis;  /* Adds an ellipsis (...) */
-  }
+	white-space: normal;      /* Allows the text to wrap */
+	overflow: visible;        /* Makes overflow visible */
+	text-overflow: clip;      /* Removes the ellipsis (...) */
+	word-wrap: break-word;    /* Breaks long words to fit */
+}
   
 p {
 	font-family: 'Helvetica Neue', sans-serif;
