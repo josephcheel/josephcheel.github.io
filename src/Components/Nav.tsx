@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
 					<div className="col-2 position-relative" id="column2">
 					<Link to="/works" className="image-container" id="folder2">
 						<img src="/icons/folder-solid2.svg" alt="Folder 2" />
-						<div className="image-title">Works</div>
+						<div className="image-title">Work</div>
 					</Link>
 					</div>
 					<div className="col-2 position-relative" id="column3">
