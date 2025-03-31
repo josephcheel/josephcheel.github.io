@@ -24,7 +24,7 @@
 } 
 @font-face {
   font-family: 'Humane';
-  src: url('/public/fonts/Humane-VF.ttf') format('truetype'); /* Corrected format */
+  src: url('/fonts/Humane-VF.ttf') format('truetype'); /* Corrected format */
   font-weight: 700; /* Specifies the weight as Bold (700) */
   font-style: normal; /* Specifies the style as normal */
 }
