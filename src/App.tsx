@@ -1,13 +1,13 @@
-import { BrowserRouter , Routes, Route, useLocation } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import { useEffect } from 'react'
 import Home from './Components/Home/Home.tsx'
 import Nav from './Components/Nav.tsx'
 import NotFound from './Components/NotFound.tsx'
+import Work from "./Components/Works/Work.tsx"
+import Projects from "./Components/Projects/Projects.tsx"
 
 
 import './App.css'
-import Work from "./Components/Works/work.tsx"
-import Projects from "./Components/Projects/Projects.tsx"
 // import { grained } from './grained.js'
 // const grained = require('./grained.js');
 
