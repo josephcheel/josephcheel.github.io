@@ -33,16 +33,18 @@ const BentoList: React.FC = () => {
 					</div>
 					))}
 				</div> */}
-				<h2 className="text-center justify-content-center" style={{
-					fontSize: '10rem', 
-					lineHeight: '0.8',
-					wordWrap: 'break-word',
-					overflowWrap: 'break-word',
-					wordBreak: 'break-word',
-					
-				}}>
-				Check my GitHub for more info!
-			</h2>
+				<a style={{ textDecoration: "none", color: "black"}} href="https://github.com/josephcheel">
+					<h2 className="text-center justify-content-center" style={{
+						fontSize: '10rem', 
+						lineHeight: '1',
+						wordWrap: 'break-word',
+						overflowWrap: 'break-word',
+						wordBreak: 'break-word',
+						
+					}}>
+						Check my GitHub for more info!
+					</h2>
+				</a>
 				<div className="text-center mt-5">
 					<h3 className="text-center text-black">Some of my most relevant projects</h3>
 					{/* <h5 className="text-center text-black">Some of my most relevant projects</h5> */}
