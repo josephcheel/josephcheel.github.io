@@ -10,7 +10,7 @@ const NavProjects: React.FC = () => {
 					<div>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="#All">
+								<a className="nav-link" aria-current="page" href="#All">
 									All
 								</a>
 							</li>

@@ -5,7 +5,7 @@ import './Nav.css';
 const Nav: React.FC = () => {
 	
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light ">
+	<nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">Joseph Cheel Nakashima</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@ const Nav: React.FC = () => {
 						</Link>
 					</div>
 					<div className="col-2 position-relative" id="column4">
-						<Link to="/about" className="image-container" id="folder4">
+						<Link to="/contact" className="image-container" id="folder4">
 							<img src="/icons/folder-solid3.svg" alt="Folder 4" />
 							<div className="image-title">Contact</div>
 						</Link>

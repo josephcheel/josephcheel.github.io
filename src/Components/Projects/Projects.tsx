@@ -7,10 +7,8 @@ import NavProjects from "./Nav.tsx";
 const Projects: React.FC = () => {
 	return (
 		<>
-			
-			<NavProjects></NavProjects>
+			{/* <NavProjects></NavProjects> */}
 			<BentoList></BentoList>
-
 		</>
 	)
 };
