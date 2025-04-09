@@ -38,9 +38,21 @@ const Nav: React.FC = () => {
 							<div className="image-title">Contact</div>
 						</Link>
 					</div>
-					<div className="col-3 position-relative d-flex justify-content-end ">
+					{/* <div className="col-3 position-relative d-flex justify-content-end ">
 						<div className="image-container d-none d-lg-block"  >
 							<img id="languages" src="/icons/languages.svg" alt="Languages" />
+						</div>
+					</div> */}
+					<div className="col-3 position-relative d-flex justify-content-end">
+						<div className="rounded-circle overflow-hidden" style={{ width: "65px", height: "65px", border: "2px solid rgba(128, 131, 133, 0.5)" }}>
+							<img 
+								src="/images/profile.jpeg" 
+								alt="User Profile" 
+								className="img-fluid" 
+								style={{ objectFit: "cover", width: "100%", height: "100%" 
+
+								}} 
+							/>
 						</div>
 					</div>
 				</div>
