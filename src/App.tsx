@@ -5,6 +5,7 @@ import Nav from './Components/Nav.tsx'
 import NotFound from './Components/NotFound.tsx'
 import Work from "./Components/Works/Work.tsx"
 import Projects from "./Components/Projects/Projects.tsx"
+// import Contact from "./Components/Contact/Contact.tsx"
 
 
 import './App.css'
@@ -38,7 +39,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<><Nav /><Home /></>} />
           <Route path="/work" element={<><Nav /><Work /></>} />
-          <Route path="/Projects" element={<><Nav /><Projects /></>} />
+          <Route path="/projects" element={<><Nav /><Projects /></>} />
+          {/* <Route path="/contact" element={<><Nav /><Contact /></>} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </>

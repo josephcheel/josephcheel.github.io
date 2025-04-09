@@ -1,11 +1,11 @@
 
 import React from "react";
-import data from '/public/data/projects.json' assert { type: 'json' };
+// import data from '/public/data/projects.json' assert { type: 'json' };
 import './Projects.css';
 
-console.log(data);
+// console.log(data);
 
-const project_cards = data.project_cards;
+// const project_cards = data.project_cards;
 
 // let filtered_projects = project_cards.filter((project) => {
 // 	return project.tag.includes("");
